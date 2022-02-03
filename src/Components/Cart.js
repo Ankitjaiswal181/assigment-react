@@ -22,8 +22,8 @@ export default function Cart() {
               cartId.pid===item.pid ?{...item,quantity:item.quantity+1}:item)   )
 
                 // console.log(cart)
-           localStorage.setItem('addcart',JSON.stringify(setInput));
-             dispatch({type:'updatecart',payload:setInput}); 
+//            localStorage.setItem('addcart',JSON.stringify(setInput));
+//              dispatch({type:'updatecart',payload:setInput}); 
             
         // console.log(cartId)
 
@@ -32,8 +32,8 @@ export default function Cart() {
         setInput(cart=>
             cart.map(item=>
               cartId.pid===item.pid ?{...item,quantity:item.quantity-1}:item)   )
-              localStorage.setItem('addcart',JSON.stringify(setInput));
-             dispatch({type:'updatecart',payload:setInput});
+//               localStorage.setItem('addcart',JSON.stringify(setInput));
+//              dispatch({type:'updatecart',payload:setInput});
     }
     const del=(id)=>{
         const local=input.filter((val)=>{
